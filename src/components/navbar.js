@@ -20,32 +20,36 @@ function NavBar() {
             Logo
             <i className="fas fa-football-ball"></i>
           </NavLink>
-          <ul className="nav-menu">
+          <ul className={ click ? "nav-menu active" : "nav-menu"}>
+           
             <li className="nav-item">
-              <NavLink exact to="/" className="nav-links" activeClassName="active">
+              <NavLink exact to="/" className="nav-links" activeClassName="active" onClick={handleClick}>
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink exact to="/about" className="nav-links" activeClassName="active">
+              <NavLink exact to="/about" className="nav-links" activeClassName="active" onClick={handleClick}>
                 About
               </NavLink>
             </li> 
             <li className="nav-item">
-              <NavLink exact to="/services" className="nav-links" activeClassName="active">
+              <NavLink exact to="/services" className="nav-links" activeClassName="active" onClick={handleClick}>
                 Services
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink exact to="/contact-us" className="nav-links" activeClassName="active">
+              <NavLink exact to="/contact-us" className="nav-links" activeClassName="active" onClick={handleClick}>
                 Contact us
               </NavLink>
             </li>
             
-          </ul>
+          </ul> 
+           
+          
+
           <div className="nav-icon" onClick={ handleClick }>
             {/* <i className={click ? "fas fa-window-close":"fas fa-chevron-down"}></i> */}
-            { !click ? <FontAwesomeIcon icon={faChevronDown}/> : <FontAwesomeIcon icon={faWindowClose}/> }
+            { click ? <FontAwesomeIcon icon={faWindowClose} /> : <FontAwesomeIcon icon={faChevronDown}/> }
           </div>
 
         </div>
