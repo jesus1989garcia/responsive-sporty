@@ -17,8 +17,8 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            Logo
-            <i className="fas fa-football-ball"></i>
+            LigApp
+            <i className="fas fa-futbol"></i>
           </NavLink>
           <ul className={ click ? "nav-menu active" : "nav-menu"}>
            
@@ -28,8 +28,8 @@ function NavBar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink exact to="/about" className="nav-links" activeClassName="active" onClick={handleClick}>
-                About
+              <NavLink exact to="/allmatches" className="nav-links" activeClassName="active" onClick={handleClick}>
+                Next matches
               </NavLink>
             </li> 
             <li className="nav-item">

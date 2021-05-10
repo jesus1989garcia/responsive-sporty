@@ -4,11 +4,159 @@
 }
 
 body {
-  background-color: rgb(169, 241, 60);
+  background-color: rgb(0, 0, 0);
 }
 
 .pages {
-  background-color: grey;
+  background-color: rgb(0, 0, 0);
   text-align: center;
   font-size: 3.5rem  ;
+}
+
+
+/* card-fixtures styles */
+
+.matches-container {
+  background-color: black;
+  max-width: 1500px;
+  margin: 5% 20%;
+  font-size: 0.5rem;
+}
+
+
+.fixtures-card {
+  background-color:rgb(24, 23, 24);
+  border: solid orange 5px;
+  margin: 1.5rem;
+  font-size: 1rem;
+  width: 40%;
+  color: orange;
+  display: inline-block;
+}
+
+
+.results {
+  
+  color:orange;
+  padding: 5% ;
+  height: 120px;
+}
+
+.fixtures-card:hover{
+  border: solid purple 5px;
+  transition: all 1.5s ease;
+
+}
+
+.match-num {
+  padding-top: 5px;
+}
+
+.link-team {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.link-team:hover{
+  color: yellow;
+}
+
+.link-team:hover:after {
+ content: "see team";
+ display: block;
+ border: solid yellow 2px;
+}
+
+/* team-card styling */
+
+.team-container {
+  color:white;
+  background-color: black;
+  max-width: 1500px;
+  margin: auto auto 40px auto;
+  padding-top: 50px;
+}
+
+.squad-card {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-flow: column;
+  background-color: rgb(151, 149, 149);
+  width: 30%;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 20px 5px;
+  border: solid 1px white;
+  padding-top: 7px;
+  padding-bottom: 5px;
+
+}
+
+.player-link{
+  color: purple;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+.role{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  
+}
+
+.role p{
+  margin-right: 10px;
+}
+
+/* player card styling */
+
+.player-card {
+  width: 700px;
+  background: rgb(0, 0, 0);
+  margin: 50px auto;
+  border: solid 1px white;
+  
+}
+.img-player {
+  width: 20%;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.profile-pic {
+  height: auto;
+  width: 100%;
+}
+
+
+
+.player-info {
+  color: white;
+  font-size: 1rem;
+  padding: 1.6rem;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  line-height: 2.1rem;
+  
+}
+
+.player-info * {
+  display: flex;
+  align-self: left;
+  
+}
+
+.player-info h1 {
+  color: purple;
+}
+
+
+/* results styling */
+
+.results-container {
+  color: white;
 }
