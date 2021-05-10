@@ -1,10 +1,11 @@
 import axios from 'axios';
 import React, {useEffect, useState}  from 'react'
+import TeamCard from './Team-card';
 
 
 function Team(props) {
 
-  const [team, setTeam] = useState([""])
+  const [team, setTeam] = useState([])
 
   const options = {
     method: 'GET',
@@ -24,9 +25,8 @@ function Team(props) {
   }, []) 
 
   return(
-    <div style={{color:"white"}}>
-    "team"
-    </div>
+    <TeamCard team={ team } />
+    
   )
 }
 
