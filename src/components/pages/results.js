@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom';
+import { faShieldAlt } from '@fortawesome/free-solid-svg-icons/faShieldAlt'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 function Results(props){
@@ -28,7 +30,8 @@ function Results(props){
     <div className="results-container" >
       { results.count ? results.matches.map(match =>
         <div className="results-card"id={match.id}>
-          <div>
+          <div className="team-match">
+            <FontAwesomeIcon icon={faShieldAlt} />
             <Link className="link-team" to={`/team/${match.homeTeam.id}`}><p className={match.homeTeam.id == props.match.params.id ? "team-sel" : "team-vs"}>{match.homeTeam.name}</p></Link>
           </div>
           <div>
@@ -38,7 +41,8 @@ function Results(props){
           <div>
           <p>{match.score.fullTime.awayTeam}</p>
           </div>
-          <div>
+          <div className="team-match">
+             <FontAwesomeIcon icon={faShieldAlt} />
             <Link className="link-team" to={`/team/${match.homeTeam.id}`}><p className={match.awayTeam.id == props.match.params.id ? "team-sel" : "team-vs"}>{match.awayTeam.name}</p></Link>
           </div>
       
