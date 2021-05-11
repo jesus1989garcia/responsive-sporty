@@ -43,7 +43,7 @@ function Results(props){
           </div>
           <div className="team-match">
              <FontAwesomeIcon icon={faShieldAlt} />
-            <Link className="link-team" to={`/team/${match.homeTeam.id}`}><p className={match.awayTeam.id == props.match.params.id ? "team-sel" : "team-vs"}>{match.awayTeam.name}</p></Link>
+            <Link className="link-team" to={`/team/${match.awayTeam.id}`}><p className={match.awayTeam.id == props.match.params.id ? "team-sel" : "team-vs"}>{match.awayTeam.name}</p></Link>
           </div>
       
         </div>
