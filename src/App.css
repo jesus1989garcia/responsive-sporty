@@ -183,3 +183,13 @@ body {
   color: rgb(255, 255, 255);
   
 }
+
+.team-match {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.team-match a {
+  margin-left: 8px;
+}
