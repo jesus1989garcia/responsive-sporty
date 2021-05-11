@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import FixturesCard from './pages/fixtures-card';
+import liga from '../imgs/LaLiga_Santander_(2).svg'
 
 
 
@@ -31,7 +32,9 @@ function Matches() {
   return(
     <div>
       <h1>next fixtures</h1>
-      {/* { matchesx.count ? <h3>{matchesx.matches.map(mat => <h3>{mat.id}</h3>)}</h3> : "loading..."} */}
+      <div className="logo-liga">
+        <img src={liga}></img>
+      </div>
 
       <FixturesCard matchesx={matchesx}/>
 

@@ -16,6 +16,17 @@ body {
 
 /* card-fixtures styles */
 
+.logo-liga {
+  width: 30%;
+  margin: 20px auto;
+}
+
+.logo-liga img {
+  height: auto;
+  width: 100%;
+ 
+}
+
 .matches-container {
   background-color: black;
   max-width: 1500px;
@@ -192,4 +203,46 @@ body {
 
 .team-match a {
   margin-left: 8px;
+}
+
+/* home styling  */
+
+.teams-bar {
+  width: 100;
+  display: flex;
+  height: 30px;
+  margin-top: 0px;
+  
+}
+
+.link-badge {
+  background-color: white;
+  width: auto;
+  height: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: rgb(212, 211, 209, 0.3);
+  
+  
+}
+
+.teams-bar a img {
+  height: 100%;
+  width: auto;
+  margin-top: 0px;
+  opacity: 1;
+  
+}
+
+
+
+.teams-bar a img:hover{
+  height: 110%;
+}
+
+.home {
+  background-image: url("./imgs/background-home.jpg");
+  width: 100;
+  height: 90vh;
 }
