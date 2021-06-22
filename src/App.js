@@ -6,6 +6,7 @@ import Matches from './components/matches';
 import Team from './components/pages/Team';
 import Player from './components/pages/Player';
 import Results from './components/pages/results';
+import Highlights from './components/pages/highlights';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/team/:id" component={Team} />
         <Route exact path="/player/:id" component={Player} />
         <Route exact path="/results/:id" component={Results} />
+        <Route exact path="/highlights" component={Highlights} />
        </div>
       
      </Switch>
