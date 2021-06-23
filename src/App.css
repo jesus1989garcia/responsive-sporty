@@ -266,3 +266,41 @@ body {
   margin: 6% auto;
   font-size: 3rem;
 }
+
+/* contact styles */
+
+.contact-container {
+  display: flex;
+  flex-flow: column;
+  background: url("./imgs/var-laligaap.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  
+}
+
+.contact-sub {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-box {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  background-color: black;
+  padding: 1rem;
+  border: solid orange 2px;
+  line-height: 3rem;
+}
+
+.contact-info {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  background-color: black;
+  padding: 0.5rem;
+  border: solid orange 2px;
+
+}
+
