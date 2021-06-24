@@ -31,7 +31,7 @@ function Matches() {
 
   return(
     <div>
-      <h1>next fixtures</h1>
+      <h1 style={{color:"white", fontSize:"2rem", lineHeight:"5rem"}}>Next fixtures</h1>
       <div className="logo-liga">
         <img src={liga}></img>
       </div>

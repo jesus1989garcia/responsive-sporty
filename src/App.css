@@ -242,9 +242,11 @@ body {
 }
 
 .home {
-  background-image: url("./imgs/background-home.jpg");
+  background: url("./imgs/background-home.jpg") no-repeat;
+  background-size: cover;
   width: 100;
-  height: 90vh;
+  height: 85vh;
+  
 }
 
 /* highlights style */
@@ -381,5 +383,33 @@ body {
       
     }
 
+
+  }
+
+
+  @media  screen and (max-width: 500px) {
+   
+    .contact-container {
+      display: flex;
+      flex-flow: column;
+      background-image: none;
+      
+      
+    }
+
+    .contact-sub {
+      display:flex;
+      flex-flow: column;
+      
+    }
+
+    .contact-box {
+      width: auto;
+      border: none;
+    }
+
+    .contact-info {
+      margin-top: 50px;
+    }
 
   }
