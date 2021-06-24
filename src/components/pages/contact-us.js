@@ -8,8 +8,8 @@ function Contact() {
       </div>
       <div className="contact-sub">
       <div className="contact-box">
-        <p>Troubleshooting? We work to improve LigApp</p>
-        <p>Tell us how to improve our service</p>
+        <p>Troubleshooting? We work to improve LigApp.</p>
+        <p>Tell us how to improve our service.</p>
         <p>Do you want to work in our project?</p>
       </div>
       <div className="contact-info">
