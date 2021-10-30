@@ -16,7 +16,7 @@ function Contact() {
         <p>jesus1989garcia@gmail.com</p>
         <p>Av. Fernando de la Rosa 4</p>
         <p>Fuenlabrada(Madrid)</p>
-        <p>Now in Dublin</p>
+        <p>Now in Dublin(Ireland)</p>
         <p>ZIP: 28944</p>
         <p>+44 07749781864</p>
       </div>
