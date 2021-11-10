@@ -11,7 +11,7 @@ function Results(props){
 
   const options = {
     method: 'GET',
-    url: `http://api.football-data.org/v2/teams/${props.match.params.id}/matches`,
+    url: `//api.football-data.org/v2/teams/${props.match.params.id}/matches`,
     headers: {
       'X-Auth-Token': '8bc06c4f9dd64289bffcc8f4a43f1cc5' 
     }

@@ -8,7 +8,7 @@ function Player(props) {
 
   const options = {
     method: 'GET',
-    url: `http://api.football-data.org/v2/players/${props.match.params.id}`,
+    url: `//api.football-data.org/v2/players/${props.match.params.id}`,
     headers: {
       'X-Auth-Token': '8bc06c4f9dd64289bffcc8f4a43f1cc5' 
     }
